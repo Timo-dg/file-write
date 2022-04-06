@@ -1,8 +1,13 @@
 # schijf hier tussen je code
 import tkinter as tk
+import os.path
 window = tk.Tk()
 
+#file check
 file = open('C:/Users/timo/Documents/GitHub/file-write/actions.log', 'a')
+os.path.exists('C:/Users/timo/Documents/GitHub/file-write/actions.log')
+file_exists = os.path.exists('actions.log')
+print(file_exists)
 
 
 button = tk.Button(text= 'Switch light on', bg='white', fg='black')
